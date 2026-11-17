@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#31443c"/>
+      <stop offset=".48" stop-color="#778071"/>
+      <stop offset="1" stop-color="#43523b"/>
+    </linearGradient>
+    <linearGradient id="earth" x2="0" y2="1">
+      <stop stop-color="#342e1d"/>
+      <stop offset=".35" stop-color="#1c1c12"/>
+      <stop offset="1" stop-color="#0b120c"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="30%" cy="74%" r="46%">
+      <stop stop-color="#c5a75f" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#e4d7a1" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="clouds">
+      <feTurbulence type="fractalNoise" baseFrequency=".009 .024" numOctaves="3" seed="12"/>
+      <feColorMatrix values=".33 0 0 0 .11 .33 0 0 0 .12 .33 0 0 0 .1 0 0 0 .5 0"/>
+      <feGaussianBlur stdDeviation="11"/>
+    </filter>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+    <linearGradient id="leaf" x2="1" y2="1">
+      <stop stop-color="#719042"/>
+      <stop offset="1" stop-color="#263b1b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1800" height="900" fill="url(#sky)"/>
+  <rect width="1800" height="660" filter="url(#clouds)" opacity=".72"/>
+  <rect width="1800" height="900" fill="url(#sun)"/>
+  <path d="M0 726 Q290 690 520 720T1000 710t420 6 380-17v201H0Z" fill="url(#earth)"/>
+  <path d="M0 764q260-42 470 2t475-11 447 18 408-6v132H0Z" fill="#10180e" opacity=".8"/>
+  <g fill="#816b3a" opacity=".7">
+    <ellipse cx="92" cy="760" rx="38" ry="12"/><ellipse cx="337" cy="735" rx="58" ry="17"/>
+    <ellipse cx="710" cy="764" rx="43" ry="13"/><ellipse cx="1110" cy="746" rx="54" ry="15"/>
+    <ellipse cx="1518" cy="752" rx="45" ry="12"/><ellipse cx="1710" cy="738" rx="31" ry="10"/>
+  </g>
+  <g opacity=".97">
+    <path d="M236 760Q235 491 226 91" fill="none" stroke="#30421c" stroke-width="15"/>
+    <path d="M228 354Q126 323 112 240q79 4 116 80M231 445q88-119 170-116-24 91-164 145M230 220q-91-98-78-179 86 55 95 150" fill="url(#leaf)"/>
+    <path d="M677 755q-11-220 9-404" fill="none" stroke="#39491f" stroke-width="12"/>
+    <path d="M684 497q-112-23-131-102 75-7 142 59m-9 87q75-109 149-97-23 81-142 125" fill="url(#leaf)"/>
+    <path d="M1024 756q-12-147 5-257" fill="none" stroke="#293b1c" stroke-width="11"/>
+    <path d="M1027 585q-91-25-105-96 67-5 116 59m-8 38q66-86 129-75-21 66-122 99" fill="url(#leaf)"/>
+    <path d="M1350 748q-8-124 18-216" fill="none" stroke="#32411c" stroke-width="10"/>
+    <path d="M1361 610q-78-19-91-80 62-2 100 48m-8 48q55-69 111-57-19 54-105 77" fill="url(#leaf)"/>
+  </g>
+  <g fill="#0a140c" opacity=".7" filter="url(#soft)">
+    <ellipse cx="210" cy="798" rx="325" ry="77"/>
+    <ellipse cx="1130" cy="806" rx="400" ry="82"/>
+    <ellipse cx="1630" cy="790" rx="270" ry="80"/>
+  </g>
+  <rect width="1800" height="900" fill="#061a11" opacity=".22"/>
+</svg>

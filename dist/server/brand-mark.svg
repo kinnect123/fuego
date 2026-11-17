@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 859" width="1080" height="859">
+  <defs>
+    <style>
+      .title-text {
+        font-family: 'Montserrat', 'Gotham', 'Futura', 'Arial Black', sans-serif;
+        font-weight: 800;
+        font-size: 184px;
+        fill: #096435;
+        letter-spacing: 6px;
+      }
+      .subtitle-text {
+        font-family: 'Montserrat', 'Gotham', 'Futura', 'Arial', sans-serif;
+        font-weight: 700;
+        font-size: 74px;
+        fill: #d2a72a;
+        letter-spacing: 21px;
+      }
+    </style>
+  </defs>
+
+  <!-- Emblem Mark -->
+  <g id="emblem">
+    <!-- Green Octagonal C-Arrow Shape -->
+    <polygon fill="#096435" points="642,37 551,126 439,126 317,246 317,423 427,533 595,533 706,421 706,327 568,463 459,463 390,393 390,275 472,194 579,194 641,133 704,194 752,146" />
+    <!-- Gold Diagonal Slash -->
+    <polygon fill="#d2a72a" points="705,218 470,450 568,450 705,314" />
+  </g>
+
+  <!-- Typography -->
+  <g id="typography">
+    <text x="540" y="728" text-anchor="middle" class="title-text">CHISINGA</text>
+    <text x="550" y="823" text-anchor="middle" class="subtitle-text">TRADING LIMITED</text>
+  </g>
+</svg>
